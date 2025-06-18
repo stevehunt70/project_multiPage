@@ -297,21 +297,29 @@ button:hover {
     border: 1px solid #08789a;
     border-radius: 10px;
     width: 200px;
-    height: auto;
+    height: 250px;
     margin: 0 auto;
-    font-weight: bold;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(133, 133, 163, 0.5);
+}
+.option-box img {
+    width: 100px;
+    height: auto;
+}
+.option-box .rowtitle {
+    font-size: 12px;
+    font-weight: bold;
+}
+.option-box .rowtext {
+    font-size: 12px;
+    color: #163d49;
+    margin: 10px;
 }
 /*
 option-box p {
     font-size: 10px;
 }
-.option-box img {
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-}
+
 option-box:hover {
     transform: scale(1.2);
 }
