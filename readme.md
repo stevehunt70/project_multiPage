@@ -15,6 +15,9 @@
 *. index links only to BI Software and contact - no live links to the other aspects from the main menu
 *. From BI Software you can link to all aspects including contact but only BI Software from the main menu, all sub-menu links are live
 
+# MS Excel
+*. Initial wireframe layout wireframe.xlsx
+
 # Links
 *. github repository: https://github.com/stevehunt70/project_multiPage.git
 *. github view pages: https://stevehunt70.github.io/project_multiPage/
