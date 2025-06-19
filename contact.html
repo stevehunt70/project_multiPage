@@ -1,0 +1,125 @@
+<!DOCTYPE='<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        
+    <!-- start navigation bar (menu) -->
+    <div class="rounded-container" id="header-top">
+        <!-- start navigation bar (menu) -->
+        <div id="navbar">
+            <button class="menu-toggle" onclick="toggleMenu('top-navLinks')">☰</button>
+            <div class="nav-links" id="top-navLinks">
+                <a href="./index.html" alt="Home"><img src="./images/menu/logo1.png"></a>                
+                <a href="./insidexl.html" alt="Inside XL">BI Software</a>
+                <a href=",/sql.html" alt="SQL">SQL Management</a>
+                <a href="./powerbi.html" alt="Power BI">Power BI</a>
+                <a href="./excel.html" alt="Microsoft Excel">MS Excel</a>
+                <a href="./webdev.html" alt="Web Development">Web Development</a>
+                <a href="./appdev.html" alt="App Development">App Development</a>
+                <a href="./contact.html" alt="Contact">Contact</a>
+            </div>
+        </div>
+        <br>
+    <!-- end navigation bar (menu)-->
+        <br>
+    <!-- end navigation bar (menu)-->
+
+    <!-- start contact form-->
+    <div class="container-box3">
+        <div class="container-content-pages">         
+            <div class="form-content">
+                <div class="row-request0">
+                    Contact
+                </div>
+                <div class="row-request1">
+                    For any information request or demonstration, please contact us by phone or by completing the form below
+                </div>
+                <div class="row-request2">
+                    Your request: <br>
+                </div>
+                <!-- start form to complete -->
+                <form action="submit.php" method="post">
+                            <div class="row-request2">
+                                <input type="checkbox" name="xlCB" value="cbXL">
+                                <label for="xlCB">BI Software</label>
+                                
+                                <input type="checkbox" name="sqlCB" value="cbSQL">
+                                <label for="sqlCB">Microsoft SQL</label>
+                                
+                                <input type="checkbox" name="pbiCB" value="cbPBI">
+                                <label for="pbiCB">Power BI</label>
+                            </div>
+                            <div class="row-request2">
+                                <input type="checkbox" name="excelCB" value="cbExcel">        
+                                <label for="excelCB">MS Excel</label>
+
+                                <input type="checkbox" name="webCB" value="cbWeb">            
+                                <label for="webCB">Web Development</label>
+
+                                <input type="checkbox" name="appCB" value="cbApp">            
+                                <label for="appCB">App Development</label>
+                            </div>
+                            <br>
+                            <div class="row-request2">
+                            <!--form text input -->
+                                <input type="text" name="company" placeholder="enter company name"><br><br>
+                                <input type="text" name="name" placeholder="enter your full name"><br><br>
+                                <input type="text" name="email" placeholder="enter your email address"><br><br>
+                                <label for="txtmulti">Message</label><br>
+                                <textarea name="txtmulti" cols="50" rows="8" placeholder="enter any other details"></textarea><br><br>
+                                <button>submit</button>
+                            </div>
+                </form>
+                <!-- end form to complete -->
+            </div>
+                <!-- start of address and contact details -->
+                    <div class="form-address-bg">
+                        <div class="form-content">
+                            <div class="row-request4"> <b>UK office</b> </div>
+                            <div class="row-request3"> Eastleigh </div>
+                            <div class="row-request3"> Hampshire </div>
+                            <div class="row-request3"> United Kingdom </div>
+                            <div>
+                                <br>
+                                <div class="contact-image"> <img src="./images/contact/tel.png" alt="Phone"> </div>
+                                <div class="contact-item"><p><a href="tel:01234567890" class="hover-underline">01234 567890</a></p> </div>
+                                <br>
+                                <br>
+                                <div class="contact-image"> <img src="./images/contact/email.png" alt="Phone"> </div>
+                                <div class="contact-item"> <p><a href="mailto:steve@infineo-solutions.co.uk" class="hover-underline">steve@infineo-solutions.co.uk</a></p> </div>
+                                <br>
+                                <br>
+                                <div class="contact-image"> <img src="./images/contact/web.png" alt="Phone"> </div>
+                                <div class="contact-item"> <p><a href="http://www.infineo-solutions.co.uk" class="hover-underline" target="_blank">www.infineo-solutions.co.uk</a></p> </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- end of address and contact details -->      
+
+        </div>
+    </div>        
+    <!-- end contact form-->
+        <footer>
+            <div class="text-box">
+                <p><a href="">Legal notices </a></p>
+                <p> - </p>
+                <p><a href="">Graphic design </a></p>
+            </div>
+        </footer>
+        
+        <script>
+            function toggleMenu(id) {
+                const nav = document.getElementById(id);
+                nav.classList.toggle('show');
+            }
+        </script>
+
+    </body>
+</html>

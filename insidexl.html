@@ -10,14 +10,13 @@
     </head>
     <body>
         
-    <!-- start navigation bar (menu) -->
+    
     <div class="rounded-container" id="header-top">
+    <!-- start navigation bar (menu) -->
         <div id="navbar">
-            <div>
-                <a href="./index.html" alt="Home"><img src="./images/menu/logo1.png" width="250px" height="40px"></a><br>      
-            </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-            <div class="nav-links" id="navLinks">                
+            <button class="menu-toggle" onclick="toggleMenu('top-navLinks')">☰</button>
+            <div class="nav-links" id="top-navLinks">
+                <a href="./index.html" alt="Home"><img src="./images/menu/logo1.png"></a>                
                 <a href="./insidexl.html" alt="Inside XL">BI Software</a>
                 <a href=",/sql.html" alt="SQL">SQL Management</a>
                 <a href="./powerbi.html" alt="Power BI">Power BI</a>
@@ -26,12 +25,24 @@
                 <a href="./appdev.html" alt="App Development">App Development</a>
                 <a href="./contact.html" alt="Contact">Contact</a>
             </div>
-            <div>
-                <a href="tel:01234567890">+44(0)1234 567 890</a>      
-            </div>
         </div>
         <br>
     <!-- end navigation bar (menu)-->
+    <!-- start BI Software menu -->
+     <div id="sub-navbar">
+            <!--<div>
+                <a href="./index.html" alt="Home"><img src="./images/menu/logo1.png" width="250px" height="40px"></a><br>      
+            </div> -->
+            <button class="menu-toggle" onclick="toggleMenu('sub-navLinks')">☰</button>
+            <div class="nav-links" id="sub-navLinks">                
+                <a href="./insidexl.html" alt="Inside XL">Inside XL</a>
+                <a href="./studio.html" alt="Inside Studio">Inside Studio</a>
+                <a href="./player.html" alt="Inside Player">Inside Player</a>
+                <a href="./drive.html" alt="Inside Drive">Inside Drive</a>
+                <a href="./automate.html" alt="Inside Automate">Inside Automate</a>
+            </div>
+        </div>
+    <!-- end BI Software menu -->
 
     <!-- xl description start-->
     <div class="container-box3">
@@ -40,13 +51,13 @@
             <div class="container-header-body">
                 <div class="row-info0">
                     Inside XL
-                </div>
+                </div> <br>
                 <div class="row-info1">
                     Build your tailor-made reports quickly in Excel®
-                </div>
+                </div> <br>
                 <div class="row-info2">
                     With the Inside XL module, you create all your personalised management dashboards using Excel® and you get instant reporting.
-                </div>
+                </div> <br>
                 <div class="row-info3">
                     With a single click, you choose the criteria and the data you want to analyse <br>
                 </div>
@@ -59,6 +70,7 @@
                 <div class="row-info3">                    
                     You benefit from the automatic update of your personalized report
                 </div>
+                <br>
                 <div class="row">
                     <div class="container-content-button">
                         <a href="./contact.html" alt="Contact"><button>request a free demo</button></a>
@@ -121,9 +133,9 @@
         </footer>
         
         <script>
-            function toggleMenu() {
-                const nav = document.getElementById('navLinks');
-                nav.classList.toggle('active');
+            function toggleMenu(id) {
+                const nav = document.getElementById(id);
+                nav.classList.toggle('show');
             }
         </script>
 

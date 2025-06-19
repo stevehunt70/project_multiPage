@@ -12,24 +12,22 @@
         
         <!-- rounded rectangle on the background that contains all of the text and images on the page -->
     <div class="rounded-container" id="header-top">
+        <!-- start navigation bar (menu) -->
         <div id="navbar">
-            <div>
-                <a href="./index.html"><img src="./images/menu/logo1.png" width="250px" height="40px"></a><br>      
-            </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-            <div class="nav-links" id="navLinks">                
-                <a href="./insidexl.html">BI Software</a>
-                <a href="./sql.html">SQL Management</a>
-                <a href="#">Power BI</a>
-                <a href="#">MS Excel</a>
-                <a href="./webdev.html">Web Development</a>
-                <a href="#">App Development</a>
-                <a href="#">Contact</a>
-            </div>
-            <div>
-                <a href="tel:01234567890">+44(0)1234 567 890</a>      
+            <button class="menu-toggle" onclick="toggleMenu('top-navLinks')">☰</button>
+            <div class="nav-links" id="top-navLinks">
+                <a href="./index.html" alt="Home"><img src="./images/menu/logo1.png"></a>                
+                <a href="./insidexl.html" alt="Inside XL">BI Software</a>
+                <a href=",/sql.html" alt="SQL">SQL Management</a>
+                <a href="./powerbi.html" alt="Power BI">Power BI</a>
+                <a href="./excel.html" alt="Microsoft Excel">MS Excel</a>
+                <a href="./webdev.html" alt="Web Development">Web Development</a>
+                <a href="./appdev.html" alt="App Development">App Development</a>
+                <a href="./contact.html" alt="Contact">Contact</a>
             </div>
         </div>
+        <br>
+    <!-- end navigation bar (menu)-->
         <br>
 
     <!-- xl start -->
@@ -200,9 +198,9 @@
         </footer>
         
         <script>
-            function toggleMenu() {
-                const nav = document.getElementById('navLinks');
-                nav.classList.toggle('active');
+            function toggleMenu(id) {
+                const nav = document.getElementById(id);
+                nav.classList.toggle('show');
             }
         </script>
 
