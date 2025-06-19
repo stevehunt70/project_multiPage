@@ -1,4 +1,8 @@
 /*start main elements */
+:root {
+    --corpBlue: #08789a;
+    --corpOrange: #f99d1b;
+}
 * {
     font-family: Verdana;
 }
@@ -11,7 +15,7 @@ a{
 .between-border {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #08789a;
+    border: 1px solid var(--corpBlue);
     width: 75%;
     margin-top: 20px;
     justify-self: center;
@@ -19,7 +23,7 @@ a{
 .between-border-hori {
     display: flex;
     flex-wrap: wrap;
-    border-left: 1px solid #08789a;
+    border-left: 1px solid var(--corpBlue);
     width: px;
     height: auto;
     justify-self: center;
@@ -30,7 +34,7 @@ article {
     display: flex;
     width: 80%;
     margin: 0 auto;
-    border: 2px solid #08789a;
+    border: 2px solid var(--corpBlue);
     border-radius: 10px;
     background-color: #d4e4e9;
 }.article-text {
@@ -70,7 +74,7 @@ footer {
     min-width: 100px;
 }
 .text-box a:hover {
-    color: #f99d1b;    
+    color: var(--corpOrange);    
 }
 /*end of footer*/
 
@@ -92,7 +96,7 @@ footer {
 /* individual elements */
 #navbar {
     height: 90px;    
-    border-bottom: 2px solid #08789a;
+    border-bottom: 2px solid var(--corpBlue);
 }
 #sub-navbar {
     top: 90px;
@@ -109,14 +113,14 @@ footer {
 /* joint extra elements */
 #navbar a, #sub-navbar a {
   display: block;
-  color: #08789a;
+  color: var(--corpBlue);
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
 }
 #navbar a:hover, #sub-navbar a:hover {
-  background-color: #f99d1b;
-  color: #08789a;
+  background-color: var(--corpOrange);
+  color: var(--corpBlue);
 }
 
 #navbar a.active, #sub-navbar a.active {
@@ -128,7 +132,7 @@ footer {
     font-size: 28px;
     background: none;
     border: none;
-    color: #08789a;
+    color: var(--corpBlue);
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -170,9 +174,9 @@ footer {
 .container-content-main {
     display: flex;
     width: 60%;
-    border-left: 2px solid #08789a;
-    border-right: 2px solid #08789a;
-    color: #08789a;
+    border-left: 2px solid var(--corpBlue);
+    border-right: 2px solid var(--corpBlue);
+    color: var(--corpBlue);
     margin: 40px auto;
     padding-inline-start: 40px;
     padding-inline-end: 40px;
@@ -183,7 +187,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    color: #08789a;
+    color: var(--corpBlue);
     margin: 40px auto;
     padding-inline-start: 40px;
     padding-inline-end: 40px;
@@ -255,7 +259,7 @@ footer {
     font-size: 15px;
     font-weight: bolder;
     text-align: left;
-    color: #f99d1b;
+    color: var(--corpOrange);
 }
 .container-header-body .row-info4 {
     margin-bottom: 10px;
@@ -268,15 +272,15 @@ footer {
 }
 .container-content-button button {
     padding: 10px 20px;
-    background-color: #f99d1b;
-    color: #08789a;
-    border: 1px solid #08789a;
+    background-color: var(--corpOrange);
+    color: var(--corpBlue);
+    border: 1px solid var(--corpBlue);
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 .container-content-button button:hover {
-    background-color: #08789a;
+    background-color: var(--corpBlue);
     color:white    
 }
 .form-content {
@@ -317,7 +321,7 @@ footer {
     font-size: 15px;
     font-weight: bolder;
     text-align: left;
-    color: #f99d1b;
+    color: var(--corpOrange);
 }
 .form-content .row-request4 {
     margin-bottom: 10px;
@@ -326,7 +330,7 @@ footer {
     color: #ffffff;
 }
 .form-address-bg {
-    background-image: linear-gradient(to right, #08789a, #61d1f3);
+    background-image: linear-gradient(to right, var(--corpBlue), #61d1f3);
     width: 375px;
     height: auto;
     font-size: 16px;
@@ -359,7 +363,7 @@ footer {
 }
 .option-box {
     background-color: white;
-    border: 1px solid #08789a;
+    border: 1px solid var(--corpBlue);
     border-radius: 10px;
     width: 200px;
     height: 250px;

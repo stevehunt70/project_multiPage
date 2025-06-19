@@ -17,4 +17,4 @@
 
 # Links
 *. github repository: https://github.com/stevehunt70/project_multiPage.git
-*. github view pages: 
+*. github view pages: https://stevehunt70.github.io/project_multiPage/
