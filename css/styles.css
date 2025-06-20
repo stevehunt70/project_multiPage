@@ -24,7 +24,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     border-left: 1px solid var(--corpBlue);
-    width: px;
     height: auto;
     justify-self: center;
 }
@@ -182,6 +181,9 @@ footer {
     padding-inline-end: 40px;
     gap: 20px;
     align-items: flex-start;
+}
+.container-content-main-right {
+    align-items: flex-end;
 }
 .container-content-pages {
     display: flex;
